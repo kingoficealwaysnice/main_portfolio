@@ -3,27 +3,38 @@
 import AppearByWords from '@src/components/animationComponents/appearByWords/Index';
 import ButtonLink from '@src/components/animationComponents/buttonLink/Index';
 import Image from 'next/image';
-import Link from 'next/link';
 import clsx from 'clsx';
 import { gsap } from 'gsap';
 import projects from '@src/constants/projects';
 import styles from '@src/pages/components/projects/styles/projects.module.scss';
 import useIsMobile from '@src/hooks/useIsMobile';
-import { useIsomorphicLayoutEffect } from '@src/hooks/useIsomorphicLayoutEffect';
-import { useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useShallow } from 'zustand/react/shallow';
 import { useStore } from '@src/store';
 import { useWindowSize } from '@darkroom.engineering/hamo';
+import { useInView } from 'react-intersection-observer';
+import { useAppContext } from '@/components/dom/context/AppContext';
+import { useScrollDirection } from '@/components/dom/hooks/useScrollDirection';
+import { useTheme } from '@/components/dom/hooks/useTheme';
 
-function Projects() {
-  const isMobile = useIsMobile();
-  const windowSize = useWindowSize();
+const Projects = () => {
+  const { isMobile } = useAppContext();
+  const { scrollDirection } = useScrollDirection();
+  const { theme } = useTheme();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+  const [currentProject, setCurrentProject] = useState(null);
+  const [newProjects, setNewProjects] = useState([]);
   const [isLoading] = useStore(useShallow((state) => [state.isLoading]));
-
+  const windowSize = useWindowSize();
   const rootRef = useRef();
   const projectRefs = useRef([]);
 
-  const newProjects = [projects[0], projects[1], projects[2]];
+  useEffect(() => {
+    setNewProjects(projects);
+  }, [projects]);
 
   const setupProjectAnimations = () => {
     const ctx = gsap.context(() => {
@@ -55,7 +66,7 @@ function Projects() {
     return ctx;
   };
 
-  useIsomorphicLayoutEffect(() => {
+  useEffect(() => {
     const ctx = setupProjectAnimations();
     return () => ctx.kill();
   }, [isLoading, windowSize.height]);
@@ -70,8 +81,8 @@ function Projects() {
       <section ref={rootRef} className={clsx(styles.root, 'layout-block-inner')}>
         <div className={styles.innerContainer}>
           {newProjects.map((project, index) => (
-            <Link aria-label={`Go ${project.title}`} key={project.id} href={project.link} className={clsx(styles.card)} data-project-id={project.id}>
-              <div className={styles.projectsWrap}>
+            <Link key={project.id} href={project.link} className={clsx(styles.card)} data-project-id={project.id}>
+              <div ref={(el) => (projectRefs.current[index] = el)} className={styles.projectsWrap}>
                 <div className={clsx(styles.container, 'layout-grid-inner')}>
                   <div className={styles.projectsDetails}>
                     <h6 className="h6">{project.date}</h6>
