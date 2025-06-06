@@ -225,12 +225,12 @@ function Home() {
     <section ref={rootRef} className={clsx(styles.root)}>
       <div className={clsx(styles.topContainer, 'layout-grid-inner')}>
         <div className={styles.leftContainer}>
-          <h2 className="h2">Remarkable</h2>
-          <h2 className={clsx('h2', 'bold')}>Virtual Experiences</h2>
+          <h2 className="h2">Transforming</h2>
+          <h2 className={clsx('h2', 'bold')}>AI & Blockchain Solutions</h2>
         </div>
         {!isMobile && (
           <h6 className={clsx('h6', styles.rightContainer)}>
-            With years of experience, I create immersive digital environments that elevate your virtual presence. Join me in redefining digital interaction.
+            With expertise in AI and blockchain, I create intelligent systems that transform data into value. Join me in building the future of technology.
           </h6>
         )}
       </div>

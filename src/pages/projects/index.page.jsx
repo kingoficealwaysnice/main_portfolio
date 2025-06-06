@@ -16,10 +16,10 @@ import { useStore } from '@src/store';
 import { useWindowSize } from '@darkroom.engineering/hamo';
 
 const seo = {
-  title: 'Giats - Projects',
+  title: 'Khushal - Projects',
   description: 'Explore my portfolio to see a range of frontend projects, from responsive websites to web applications. Discover my work with React, Nextjs, React three fiber, Electron and more.',
   keywords: [
-    'Giats Projects',
+    'Khushal Projects',
     'Portfolio Showcase',
     'Frontend Development Examples',
     'Web Design Portfolio',
@@ -32,7 +32,7 @@ const seo = {
     'React Three Fiber Projects',
     'Electron Projects',
     'Professional Web Development',
-    'Evangelos Giatsidis Projects',
+    'Khushal Singh Projects',
   ],
 };
 

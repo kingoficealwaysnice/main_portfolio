@@ -11,25 +11,25 @@ function Overview() {
       <div className={styles.title}>
         {isMobile ? (
           <AppearTitle key="mobile-queto">
-            <h3 className="h3">The front-end developer&apos;s role </h3>
+            <h3 className="h3">Transforming data into intelligence</h3>
             <h3 className="h3">
-              is like a kind host, <span className="medium">ensuring</span>
+              through <span className="medium">cutting-edge</span>
             </h3>
             <h3 className="h3">
-              visitors have a <span className="medium">smooth</span> and
+              machine learning and <span className="medium">AI</span>
             </h3>
             <h3 className="h3">
-              <span className="medium">enjoyable</span> experience.
+              solutions that <span className="medium">drive</span> innovation.
             </h3>
           </AppearTitle>
         ) : (
           <AppearTitle key="desktop-queto">
-            <h3 className="h3">The front-end developer&apos;s role is like a</h3>
+            <h3 className="h3">Transforming data into intelligence through</h3>
             <h3 className="h3">
-              kind host, <span className="medium">ensuring</span> visitors have
+              cutting-edge machine learning and AI solutions that
             </h3>
             <h3 className="h3">
-              a <span className="medium">smooth</span> and <span className="medium">enjoyable</span> experience.
+              drive innovation.
             </h3>
           </AppearTitle>
         )}
@@ -42,35 +42,46 @@ function Overview() {
       <div className={styles.desc}>
         {!isMobile ? (
           <AppearTitle key="desktop-overview">
-            <h6 className="h6">Hey there! I&apos;m a 26-year-old front-end developer from Greece with a </h6>
-            <h6 className="h6">passion for crafting amazing digital experiences. I studied software</h6>
-            <h6 className="h6">engineering to deepen my understanding of how to build sleek and </h6>
-            <h6 className="h6">efficient websites and apps.</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>When I&apos;m not busy coding, you&apos;ll often find me soaking up inspiration from</h6>
-            <h6 className="h6">the world of design. Whether it&apos;s exploring new color palettes or refining</h6>
-            <h6 className="h6">user interfaces, I love bringing creativity into my work.</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>When I&apos;m not immersed in coding, I enjoy staying active. I love swimming, </h6>
-            <h6 className="h6">rowing, and playing intense PC games to relax and recharge.</h6>
+             <h6 className="h6">Hello! I'm Khushal Singh, a dedicated machine learning engineer based in India.</h6>
+              <h6 className="h6">My journey into AI began with a fascination for how machines can learn from</h6>
+              <h6 className="h6">data and make intelligent decisions. Over the years, I've specialized in</h6>
+              <h6 className="h6">cutting-edge machine learning techniques and their real-world applications.</h6>
+              <h6 className={clsx(styles.paddingTop, 'h6')}>I've built expertise in areas like:</h6>
+              <h6 className="h6">- Natural Language Processing (NLP) for advanced text analysis</h6>
+              <h6 className="h6">- Computer Vision for intelligent image processing</h6>
+              <h6 className="h6">- Deep Learning for complex pattern recognition</h6>
+              <h6 className="h6">- Reinforcement Learning for intelligent decision-making</h6>
+              <h6 className={clsx(styles.paddingTop, 'h6')}>Beyond my professional work, I actively contribute to the AI community by:</h6>
+              <h6 className="h6">- Publishing research papers on ML advancements</h6>
+              <h6 className="h6">- Maintaining open-source ML libraries</h6>
+              <h6 className="h6">- Mentoring aspiring ML engineers</h6>
+              <h6 className="h6">- Collaborating on cutting-edge AI projects</h6>
 
-            <h6 className={clsx(styles.paddingTop, 'h6')}>I&apos;m looking forward to collaborating and creating something great!</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>Evangelos Giatsidis.</h6>
+              <h6 className={clsx(styles.paddingTop, 'h6')}>I'm passionate about pushing the boundaries of what's possible with AI and</h6>
+              <h6 className="h6">machine learning. I thrive on solving complex problems and creating intelligent</h6>
+              <h6 className="h6">systems that make a real impact.</h6>
+              <h6 className={clsx(styles.paddingTop, 'h6')}>Khushal Singh.</h6>
           </AppearTitle>
         ) : (
-          <AppearTitle key="mobile-overview">
-            <h6 className="h6">Hey there! I&apos;m a 26-year-old front-end developer from Greece </h6>
-            <h6 className="h6">with a passion for crafting amazing digital experiences. I studied </h6>
-            <h6 className="h6">software engineering to deepen my understanding of how to </h6>
-            <h6 className="h6">build sleek and efficient websites and apps.</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>When I&apos;m not busy coding, you&apos;ll often find me soaking up </h6>
-            <h6 className="h6">inspiration from the world of design. Whether it&apos;s exploring new</h6>
-            <h6 className="h6">color palettes or refining user interfaces, I love bringing</h6>
-            <h6 className="h6">creativity into my work.</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>When I&apos;m not immersed in coding, I enjoy staying active. I love</h6>
-            <h6 className="h6">swimming, rowing, and playing intense PC games to relax</h6>
-            <h6 className="h6">and recharge.</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>I&apos;m looking forward to collaborating and creating something</h6>
-            <h6 className="h6">great!</h6>
-            <h6 className={clsx(styles.paddingTop, 'h6')}>Evangelos Giatsidis.</h6>
+           <AppearTitle key="mobile-overview">
+              <h6 className="h6">Hello! I'm Khushal Singh, a dedicated machine learning engineer based in India.</h6>
+              <h6 className="h6">My journey into AI began with a fascination for how machines can learn from</h6>
+              <h6 className="h6">data and make intelligent decisions. Over the years, I've specialized in</h6>
+              <h6 className="h6">cutting-edge machine learning techniques and their real-world applications.</h6>
+              <h6 className={clsx(styles.paddingTop, 'h6')}>I've built expertise in areas like:</h6>
+              <h6 className="h6">- Natural Language Processing (NLP) for advanced text analysis</h6>
+              <h6 className="h6">- Computer Vision for intelligent image processing</h6>
+              <h6 className="h6">- Deep Learning for complex pattern recognition</h6>
+              <h6 className="h6">- Reinforcement Learning for intelligent decision-making</h6>
+              <h6 className={clsx(styles.paddingTop, 'h6')}>Beyond my professional work, I actively contribute to the AI community by:</h6>
+              <h6 className="h6">- Publishing research papers on ML advancements</h6>
+              <h6 className="h6">- Maintaining open-source ML libraries</h6>
+              <h6 className="h6">- Mentoring aspiring ML engineers</h6>
+              <h6 className="h6">- Collaborating on cutting-edge AI projects</h6>
+              <h6 className={clsx(styles.paddingTop, 'h6')}>I'm passionate about pushing the boundaries of what's possible with AI and</h6>
+              <h6 className="h6">machine learning. I thrive on solving complex problems and creating intelligent</h6>
+              <h6 className="h6">systems that make a real impact.</h6>
+              <h6 className={clsx(styles.paddingTop, 'h6')}>Khushal Singh.</h6>
           </AppearTitle>
         )}
       </div>

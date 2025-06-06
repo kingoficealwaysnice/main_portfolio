@@ -48,11 +48,11 @@ function Hero() {
   return (
     <section ref={rootRef} className={clsx(styles.root, 'layout-block-inner')}>
       <header className={styles.titleContainer}>
-        <h2 className={clsx(styles.title, 'h2')}>Creating pixel-perfect interfaces from design to deployment.</h2>
+        <h2 className={clsx(styles.title, 'h2')}>Transforming data into intelligent solutions through AI and ML.</h2>
       </header>
       <div className={styles.wrapper}>
         <div ref={heroImageRef} className={styles.imageContainer}>
-          <Image priority quality={100} src="/giats/back.webp" sizes="100%" fill alt="Evangelos Giatsidis Back" />
+          <Image priority quality={100} src="/giats/back.webp" sizes="100%" fill alt="Khushal Singh Back" />
         </div>
       </div>
     </section>

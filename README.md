@@ -2,7 +2,7 @@
 
 # giats.me — Personal Portfolio Website
 
-This is the **original source code** for [giats.me](https://giats.me), the personal portfolio website of **Evangelos Giatsidis**.
+This is the **original source code** for [giats.me](https://giats.me), the personal portfolio website of **Khushal Singh**.
 
 I designed and built this project from scratch using modern web technologies to push the creative limits of front-end development. The site blends smooth animation, layered visuals, and technical precision to present my work in a unique and immersive way.
 
@@ -65,7 +65,7 @@ This project is licensed under the **MIT License (with attribution required)**.
 
 > If you use this code or parts of it, **credit is required**:
 >
-> _"Original portfolio design and development by Evangelos Giatsidis — [giats.me](https://giats.me)"_
+> _"Original portfolio design and development by Khushal Singh — [giats.me](https://giats.me)"_
 
 You are welcome to learn from or build upon this project, but **do not claim it as your own or use it commercially without permission.**
 
