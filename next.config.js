@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  pageExtensions: ['page.jsx'],
+  pageExtensions: ['jsx', 'js'],
   experimental: {
     // optimizeCss: true,
     // nextScriptWorkers: true,
@@ -25,7 +25,7 @@ const nextConfig = {
     }
     // shader support
     config.module.rules.push({
-      test: /\.(glsl|vs|fs|vert|frag)$/,
+      test: /(\.glsl|\.vs|\.fs|\.vert|\.frag)$/,
       exclude: /node_modules/,
       use: ['raw-loader', 'glslify-loader'],
     });
