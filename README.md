@@ -1,5 +1,3 @@
-![Portfolio Cover](/public/og.png)
-
 # Khushal's Portfolio
 
 This is the source code for Khushal's personal portfolio website, showcasing AI/ML and blockchain projects.
